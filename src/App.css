@@ -1,0 +1,75 @@
+:root {
+  --main-color: #2c3e50;
+  --sec-color: #49c7b6;
+  --dark-color: #1a252f;
+}
+.bg-main-color {
+  background-color: var(--main-color);
+}
+.bg-sec-color {
+  background-color: var(--sec-color);
+}
+.bg-dark-color {
+  background-color: var(--dark-color);
+}
+* {
+  font-size: 12px;
+}
+
+a {
+  color: inherit;
+}
+.starDesign {
+  position: relative;
+}
+.starline-white::before {
+  position: absolute;
+  content: "";
+  border-top: 4px solid white;
+  width: 70px;
+  top: 50%;
+  left: -10px;
+}
+.starline-white::after {
+  position: absolute;
+  content: "";
+  border-top: 4px solid white;
+  width: 70px;
+  top: 50%;
+  right: -10px;
+}
+.starline-dark::before {
+  position: absolute;
+  content: "";
+  border-top: 4px solid var(--main-color);
+  width: 70px;
+  top: 50%;
+  left: 0px;
+}
+.starline-dark::after {
+  position: absolute;
+  content: "";
+  border-top: 4px solid var(--main-color);
+  width: 70px;
+  top: 50%;
+  right: 0px;
+}
+.cardHover {
+  position: absolute;
+  background-color: #49c7b6cb;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 100%;
+  transition: all 1s;
+}
+.cardHover:hover {
+  opacity: 1;
+}
+.coloryBtn.active,
+.mybtn {
+  background-color: var(--sec-color);
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+}
